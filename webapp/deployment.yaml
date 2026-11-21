@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+        - name: webapp
+          image: 471730255951.dkr.ecr.ap-northeast-2.amazonaws.com/webapp:41a46088206772c03efa8c85118d15417145a6a7
+          ports:
+            - containerPort: 80
