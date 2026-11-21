@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: 471730255951.dkr.ecr.ap-northeast-2.amazonaws.com/webapp:821add1db1d33c3c65c4d3f65cb4b2048746b2da
+          image: 471730255951.dkr.ecr.ap-northeast-2.amazonaws.com/webapp:41a46088206772c03efa8c85118d15417145a6a7
           ports:
             - containerPort: 80
